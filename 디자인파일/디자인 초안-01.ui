@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>831</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 16pt;</string>
+   </property>
+   <property name="text">
+    <string>출/도착 정보조회</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(30, 126, 219, 255), stop:1 rgba(156, 209, 255, 255))</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="DateLabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>260</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95, 96, 255,30%);</string>
+    </property>
+    <property name="text">
+     <string>   탑승일</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="QueryButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>370</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(15, 0, 203);
+color: rgb(255,255,255);
+</string>
+    </property>
+    <property name="text">
+     <string>조회</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FromLabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95, 96, 255,30%)</string>
+    </property>
+    <property name="text">
+     <string>   FROM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ToLabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95,96,255,30%);</string>
+    </property>
+    <property name="text">
+     <string>   TO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>370</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0,0,0);
+</string>
+    </property>
+    <property name="text">
+     <string>닫기</string>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>130</y>
+      <width>341</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string>출발지를 선택하여 주세요</string>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Nanum Gothic</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>210</y>
+      <width>341</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string>도착지를 선택하여 주세요</string>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Nanum Gothic</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>300</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string>2021</string>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Nanum Gothic</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>300</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string>01</string>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Nanum Gothic</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="fontComboBox_5">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>300</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string>01</string>
+    </property>
+    <property name="currentFont">
+     <font>
+      <family>Nanum Gothic</family>
+     </font>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame_2</zorder>
+  <zorder>line</zorder>
+  <zorder>TitleLabel</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
