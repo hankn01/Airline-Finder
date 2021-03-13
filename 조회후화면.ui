@@ -31,6 +31,19 @@ color: rgb(0,0,0);
     <string>닫기</string>
    </property>
   </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>571</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.49795, y1:1, x2:0.482587, y2:0, stop:0 rgba(0, 35, 164, 255), stop:1 rgba(134, 151, 255, 255))</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
