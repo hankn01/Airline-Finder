@@ -12,6 +12,8 @@ class WindowClass(QMainWindow, form_class) :
         super().__init__()
         self.setupUi(self)
         self.initUI()
+        self.CloseButton.clicked.connect(self.CLSBTN)
+        
     def initUI(self):
         #출발지 목록 추가
         self.FromCmb.addItem('출발지를 선택하여 주세요')
@@ -51,6 +53,13 @@ class WindowClass(QMainWindow, form_class) :
         for j in range(1,13) :
             self.MonthCmb.addItem(str(j))
         #날짜의 경우 월에 따라 28, 30, 31일로 분기 처리
+        for k in range(1, 32) :
+            self.DateCmb.addItem(str(k))
+        
+        #선택된 날짜에 따라 if문으로 분기
+
+    def CLSBTN(self):
+        exit();
 
 #윈도우 실행 함수
 if __name__ == "__main__" :
@@ -61,3 +70,6 @@ if __name__ == "__main__" :
     myWindow.show()
 
     app.exec_()
+    
+
+    
