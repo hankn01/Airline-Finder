@@ -10,6 +10,7 @@ form_class = uic.loadUiType("메인 화면.ui")[0]
 class WindowClass(QMainWindow, form_class) :
     def __init__(self) :
         super().__init__()
+        self.setFixedSize(628,527)
         self.setupUi(self)
         self.initUI()
         self.CloseButton.clicked.connect(self.CLSBTN)
