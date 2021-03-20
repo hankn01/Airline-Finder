@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>628</width>
-    <height>411</height>
+    <height>527</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -52,7 +52,7 @@ font-size: 16pt;</string>
      <x>0</x>
      <y>0</y>
      <width>861</width>
-     <height>411</height>
+     <height>531</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -85,7 +85,7 @@ background-color: rgb(95, 96, 255,30%);</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>370</y>
+      <y>490</y>
       <width>311</width>
       <height>41</height>
      </rect>
@@ -137,7 +137,7 @@ background-color: rgb(95,96,255,30%);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>370</y>
+      <y>490</y>
       <width>321</width>
       <height>41</height>
      </rect>
@@ -166,11 +166,11 @@ color: rgb(0,0,0);
     <property name="currentText">
      <string/>
     </property>
-    <property name="placeholderText">
-     <string/>
-    </property>
     <property name="frame">
      <bool>true</bool>
+    </property>
+    <property name="placeholderText" stdset="0">
+     <string/>
     </property>
    </widget>
    <widget class="QComboBox" name="ToCmb">
@@ -223,6 +223,84 @@ color: rgb(0,0,0);
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Language">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>20</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Langlbl">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95, 96, 255,30%)</string>
+    </property>
+    <property name="text">
+     <string>Language</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Company">
+    <property name="geometry">
+     <rect>
+      <x>83</x>
+      <y>380</y>
+      <width>411</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(80,114,255,128);</string>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DateLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>340</y>
+      <width>451</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(95, 96, 255,30%);</string>
+    </property>
+    <property name="text">
+     <string>  항공사</string>
     </property>
    </widget>
   </widget>

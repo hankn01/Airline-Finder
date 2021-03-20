@@ -47,7 +47,21 @@ class WindowClass(QMainWindow, form_class) :
         self.ToCmb.addItem('포항(KPO)')
         self.ToCmb.addItem('울산(USN)')
         self.ToCmb.addItem('진주/사천(HIN)')
-
+	
+        self.Company.addItem('KE')
+        self.Company.addItem('OZ')
+        self.Company.addItem('BX')
+        self.Company.addItem('7C')
+        self.Company.addItem('LJ')
+        self.Company.addItem('TW')
+        self.Company.addItem('RS')
+        self.Company.addItem('ALL')
+	
+        self.Language.addItem('한국어/Korean')
+        self.Language.addItem('English')
+        self.Language.addItem('日本語/Japanese')
+        self.Language.addItem('中文/Chinese')
+        self.Language.addItem('Español/Spanish')
         for i in range(datetime.today().year, datetime.today().year+3) :
             self.YearCmb.addItem(str(i))
         for j in range(1,13) :
